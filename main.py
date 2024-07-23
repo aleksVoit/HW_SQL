@@ -1,7 +1,7 @@
-from create_tables import create_my_tables
+from create_tables import create_tables
 import drop_tables
 
 
 if __name__ == '__main__':
-    create_my_tables()
+    create_tables()
     drop_tables.drop_groups()

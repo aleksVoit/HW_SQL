@@ -25,7 +25,7 @@ def create_table(table_name, table_dict):
         logger.info(f'Error: {err}')
 
 
-def create_my_tables():
+def create_tables():
     create_table('groups', {'id': 'serial primary key', 'number': 'varchar(30)'})
     create_table('students', {'id': 'serial primary key', 'name': 'varchar(30)',
                               'surname': 'varchar(30)', 'group_id': 'integer',
@@ -41,4 +41,4 @@ def create_my_tables():
 
 
 if __name__ == '__main__':
-    create_my_tables()
+    create_tables()
